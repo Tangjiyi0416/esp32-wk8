@@ -49,7 +49,7 @@ void setup() {
 bool stop = false;
 void loop() {
   stop = digitalRead(13) == 0 ? false : true;
-  Serial.println(stop);
+  //Serial.println(stop);
   //buzzer
   if (nextTone) {
     noteDuration = 1300 / noteDurations[thisNote];
